@@ -43,7 +43,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   return (
     <main className="min-h-screen p-8 pb-20">
       {/* Navigation */}
-      <nav className="max-w-4xl mx-auto mb-8">
+      <nav className="max-w-4xl mx-auto mb-2">
         <Link 
           href="/"
           className="text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300 text-sm font-medium"
@@ -53,18 +53,18 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </nav>
 
       {/* Project Header */}
-      <header className="max-w-4xl mx-auto mb-12">
-        <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
-        <p className="text-gray-600 dark:text-gray-400 text-lg mb-6">
+      <header className="max-w-4xl mx-auto mb-3">
+        <h1 className="text-base font-semibold mb-0.5">{project.title}</h1>
+        <p className="text-gray-600 dark:text-gray-400 text-xs mb-1">
           {project.description}
         </p>
         
         {/* Tags */}
-        <div className="flex flex-wrap gap-2 mb-8">
+        <div className="flex flex-wrap gap-1 mb-2">
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="px-3 py-1 text-sm bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full"
+              className="px-1.5 py-0.5 text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded"
             >
               {tag}
             </span>
