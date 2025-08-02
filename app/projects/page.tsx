@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="min-h-screen p-8 pb-20">
+    <main className="p-8" style={{ minHeight: 'calc(100vh - 120px)' }}>
       {/* Navigation */}
       <nav className="max-w-4xl mx-auto mb-8">
         <Link 

@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="fixed bottom-4 left-0 right-0 p-4 text-center">
+    <footer className="p-4 text-center mt-8">
       <span className="text-gray-500 dark:text-gray-400">code by&nbsp;</span>
       <a 
         href="https://kwaji.com"

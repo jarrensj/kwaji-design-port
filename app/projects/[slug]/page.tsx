@@ -41,7 +41,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const htmlContent = marked(content);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex flex-col" style={{ minHeight: 'calc(100vh - 120px)' }}>
       <main className="flex-1 p-8">
         {/* Navigation */}
         <nav className="max-w-4xl mx-auto mb-2">
@@ -82,8 +82,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </article>
       </main>
 
-      {/* Navigation to other projects - Positioned above footer */}
-      <section className="border-t border-gray-200 dark:border-gray-800 p-4 mb-20">
+      {/* Navigation to other projects */}
+      <section className="border-t border-gray-200 dark:border-gray-800 p-4">
         <div className="max-w-4xl mx-auto">
           <h3 className="text-base font-semibold mb-2">Other Projects</h3>
           <div className="grid gap-2 md:grid-cols-2">
